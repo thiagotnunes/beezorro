@@ -3,5 +3,5 @@ require 'sinatra'
 require 'sinatra/reloader'
 
 get '/' do
-  'Hello world!'
+  File.read(File.join('public', 'index.html'))
 end
