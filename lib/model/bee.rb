@@ -1,14 +1,11 @@
+require 'representable/json'
+
 class Bee
-  attr_accessor :name
+  include Representable::JSON
 
-  def initialize(name)
-    @name = name
-  end
+  attr_accessor :name, :url
 
-  def to_json(*a)
-    {
-      "name"=> @name
-    }.to_json(*a)
-  end
+  property :name
+  property :url
 
 end
