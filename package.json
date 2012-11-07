@@ -1,0 +1,15 @@
+{
+  "name": "beezorro",
+  "version": "0.1.0",
+  "description": "Social learning",
+  "main": "grunt.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thiagotnunes/beezorro.git"
+  },
+  "author": "",
+  "license": "BSD"
+}
