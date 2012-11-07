@@ -9,7 +9,7 @@ gem 'sass'
 gem 'bson'
 gem 'bson_ext'
 gem 'json'
-gem 'representable'
+gem 'activesupport'
 
 
 gem 'foreman'

@@ -1,11 +1,8 @@
-require 'representable/json'
+require 'active_support'
 
 class Bee
-  include Representable::JSON
+  include ActiveSupport::JSON
 
   attr_accessor :name, :url
-
-  property :name
-  property :url
 
 end
