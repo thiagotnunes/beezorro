@@ -7,6 +7,7 @@ A place to share knowledge.
 
     $ gem install bundler
     $ bundle
+    $ brew install neo4j
 
 ## Running tests
 
@@ -14,9 +15,6 @@ A place to share knowledge.
 
 ## Running application
 
-    $ bundle exec rake start
+    $ ./start.sh
 
-    Which will start the server in production environment. Other options include test and development.
-
-    $bundle exec rake start:development
-
+    Which will start the server in development environment.
