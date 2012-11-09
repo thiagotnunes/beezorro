@@ -6,20 +6,27 @@ require 'json'
 
 set :root, File.dirname(__FILE__)
 
+
 class Beezorro < Sinatra::Base
-  configure do
+  configure do |config|
     register Sinatra::Reloader
+    config.also_reload "lib/**/*.rb"
+  end
+
+  before do
+    content_type :json
+    @beeController = BeeController.new
   end
 
 
   get '/' do
-    File.read(File.join('public', 'index.html'))
+    content_type :html
+    File.open(File.join('public', 'index.html'))
   end
 
   get '/bees' do
     content_type :json
-    controller = BeeController.new
-    controller.bees.to_json
+    @beeController.bees.to_json
   end
 
 end

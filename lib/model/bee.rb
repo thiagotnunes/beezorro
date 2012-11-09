@@ -3,6 +3,6 @@ require 'active_support'
 class Bee
   include ActiveSupport::JSON
 
-  attr_accessor :name, :url
+  attr_accessor :name
 
 end
