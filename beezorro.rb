@@ -2,15 +2,20 @@ require 'rubygems'
 require 'sinatra'
 require 'sinatra/base'
 require 'sinatra/reloader'
+require 'sinatra-initializers'
 require 'json'
+require 'neography'
+require 'neoid'
 
 set :root, File.dirname(__FILE__)
 
-
 class Beezorro < Sinatra::Base
-  configure do |config|
+
+  register Sinatra::Initializers
+
+  configure do |c|
     register Sinatra::Reloader
-    config.also_reload "lib/**/*.rb"
+    c.also_reload "lib/**/*.rb"
   end
 
   before do

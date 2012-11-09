@@ -4,13 +4,15 @@ gem 'thin'
 gem 'sinatra'
 gem 'sinatra-contrib'
 gem 'sinatra-reloader'
+gem 'sinatra-initializers'
 gem 'rake'
 gem 'sass'
 gem 'bson'
 gem 'bson_ext'
 gem 'json'
-gem 'activesupport'
-
+gem 'activerecord'
+gem 'neography'
+gem 'neoid', git: 'git://github.com/elado/neoid.git'
 
 gem 'foreman'
 
