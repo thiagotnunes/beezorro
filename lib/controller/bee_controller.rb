@@ -8,5 +8,6 @@ class BeeController
     @bee1.name = "Github"
     return [ @bee, @bee1]
   end
+  
 end
 
