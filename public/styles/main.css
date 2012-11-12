@@ -1,1 +1,53 @@
-/* Will be compiled down to a single stylesheet with your sass files */
+.title {
+  position: static;
+  height: 8em;
+}
+
+h1#header-title {
+  font-size: 85px;
+  line-height: 55px;
+  margin-left: 70px;
+}
+
+/* START HONEYCOMB */
+.main-hex {
+  -webkit-transform: perspective(1200px) rotateX(70deg);
+  -moz-transform: perspective(1200px) rotateX(70deg);
+  -ms-transform: perspective(1200px) rotateX(70deg);
+  -o-transform: perspective(1200px) rotateX(70deg);
+  transform: perspective(1200px) rotateX(70deg);
+  position: fixed;
+  left: auto;
+  top: -102px;
+  z-index: -1;
+}
+.hex {
+  float: left;
+  margin-left: 3px;
+  margin-bottom: -26px;
+}
+.hex .top {
+  width: 0;
+  border-bottom: 30px solid #EC4;
+  border-left: 52px solid transparent;
+  border-right: 52px solid transparent;
+}
+.hex .middle {
+  width: 104px;
+  height: 60px;
+  background: #EC4;
+}
+.hex .bottom {
+  width: 0;
+  border-top: 30px solid #EC4;
+  border-left: 52px solid transparent;
+  border-right: 52px solid transparent;
+}
+.hex-row {
+  clear: left;
+}
+.hex-row.even {
+  margin-left: 53px;
+}
+/* END HONEYCOMB */
+

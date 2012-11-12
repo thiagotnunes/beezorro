@@ -1,8 +1,9 @@
 require 'active_support'
 
-class Bee
+class Comb
   include ActiveSupport::JSON
 
-  attr_accessor :name, :combs
+  attr_accessor :name, :url
 
 end
+

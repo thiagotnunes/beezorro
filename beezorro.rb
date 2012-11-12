@@ -16,6 +16,7 @@ class Beezorro < Sinatra::Base
   before do
     content_type :json
     @beeController = BeeController.new
+    @combController = CombController.new
   end
 
 
@@ -25,8 +26,11 @@ class Beezorro < Sinatra::Base
   end
 
   get '/bees' do
-    content_type :json
     @beeController.bees.to_json
+  end
+
+  get '/combs' do 
+    @combController.combs.to_json
   end
 
 end
