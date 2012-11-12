@@ -21,10 +21,19 @@ h1#header-title {
   top: -102px;
   z-index: -1;
 }
+.extra-height {
+  height: 18em;
+}
+.centralize {
+  position: relative;
+  left: 30%;
+}
 .hex {
   float: left;
   margin-left: 3px;
   margin-bottom: -26px;
+  text-align: center;
+  font-weight: bold;
 }
 .hex .top {
   width: 0;

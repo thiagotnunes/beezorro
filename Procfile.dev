@@ -1,1 +1,1 @@
-web: bundle exec rake start:development
+web: thin -R config.ru -e DEVELOPMENT -p 3000 start
