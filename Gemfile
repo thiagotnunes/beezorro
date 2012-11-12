@@ -10,9 +10,8 @@ gem 'sass'
 gem 'bson'
 gem 'bson_ext'
 gem 'json'
-gem 'activerecord'
+gem 'sinatra-activerecord'
 gem 'neography'
-gem 'neoid', git: 'git://github.com/elado/neoid.git'
 
 gem 'foreman'
 

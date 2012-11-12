@@ -14,5 +14,3 @@ Neography.configure do |c|
     c.password = uri.password
   end
 end
-
-Neoid.db = $neo

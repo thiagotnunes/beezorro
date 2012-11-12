@@ -5,7 +5,6 @@ require 'sinatra/reloader'
 require 'sinatra-initializers'
 require 'json'
 require 'neography'
-require 'neoid'
 
 set :root, File.dirname(__FILE__)
 
@@ -30,7 +29,6 @@ class Beezorro < Sinatra::Base
   end
 
   get '/bees' do
-    content_type :json
     @beeController.bees.to_json
   end
 

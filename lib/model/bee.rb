@@ -1,7 +1,4 @@
-require 'active_support'
-
-class Bee
-  include ActiveSupport::JSON
+class Bee < ActiveRecord::Base
 
   attr_accessor :name
 
