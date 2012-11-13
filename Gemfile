@@ -10,7 +10,7 @@ gem 'sass'
 gem 'bson'
 gem 'bson_ext'
 gem 'json'
-gem 'sinatra-activerecord'
+gem 'activesupport'
 gem 'neography'
 
 gem 'foreman'
