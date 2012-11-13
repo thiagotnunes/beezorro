@@ -1,14 +1,36 @@
-<div class="hero-unit">
-  <h1>Beezorros!</h1>
-  <p>You will find out ways to:</p>
-  <ul>
-      <li ng-repeat="thing in awesomeThings">{{thing}}</li>
-  </ul>
-  <br />
-  <br />
-  <br />
-  <footer>
-    <p><span ng-repeat="bee in bees">{{bee.name}}; </span></p>
-  </footer>
-
-</div>
+<div class="row-fluid" ng-repeat="bee in bees">
+  <div class="span12">
+    <div class="hero-unit extra-height" >
+      <div class="row-fluid" >
+        <div class="span3 centralized" >
+          <img src="/images/bee180.png" />
+          <br />{{bee.name}}
+        </div>
+        <div class="span6" >
+          <div class="hex-row">
+            <div class="hex"><div class="top"></div><div class="middle"><a href="{{bee.combs[7].url}}">{{bee.combs[7].name}}</a></div><div class="bottom"></div></div>
+            <div class="hex"><div class="top"></div><div class="middle"><a href="{{bee.combs[3].url}}">{{bee.combs[3].name}}</a></div><div class="bottom"></div></div>
+            <div class="hex"><div class="top"></div><div class="middle"><a href="{{bee.combs[5].url}}">{{bee.combs[5].name}}</a></div><div class="bottom"></div></div>
+            <div class="hex"><div class="top"></div><div class="middle"><a href="{{bee.combs[9].url}}">{{bee.combs[9].name}}</a></div><div class="bottom"></div></div>
+          </div>
+          <div class="hex-row even">
+            <div class="hex"><div class="top"></div><div class="middle"><a href="{{bee.combs[2].url}}">{{bee.combs[2].name}}</a></div><div class="bottom"></div></div>
+            <div class="hex"><div class="top"></div><div class="middle"><a href="{{bee.combs[0].url}}">{{bee.combs[0].name}}</a></div><div class="bottom"></div></div>
+            <div class="hex"><div class="top"></div><div class="middle"><a href="{{bee.combs[1].url}}">{{bee.combs[1].name}}</a></div><div class="bottom"></div></div>
+          </div>
+          <div class="hex-row">
+            <div class="hex"><div class="top"></div><div class="middle"><a href="{{bee.combs[10].url}}">{{bee.combs[10].name}}</a></div><div class="bottom"></div></div>
+            <div class="hex"><div class="top"></div><div class="middle"><a href="{{bee.combs[4].url}}">{{bee.combs[4].name}}</a></div><div class="bottom"></div></div>
+            <div class="hex"><div class="top"></div><div class="middle"><a href="{{bee.combs[6].url}}">{{bee.combs[6].name}}</a></div><div class="bottom"></div></div>
+            <div class="hex"><div class="top"></div><div class="middle"><a href="{{bee.combs[8].url}}">{{bee.combs[8].name}}</a></div><div class="bottom"></div></div>
+          </div>
+        </div>
+        <div class="span3" >
+          <div class="row-fluid" ng-repeat="r in bee.relations">
+            <img src="/images/bee64.png" />
+            {{r}}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

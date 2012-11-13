@@ -1,1 +1,81 @@
-/* Will be compiled down to a single stylesheet with your sass files */
+.realhoney {
+  background-image:url('http://www.droid-life.com/wp-content/uploads/2010/12/honeycomb.jpg');
+  width: 100%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  position: relative;
+}
+.honey {
+  background-color: #ED7;
+}
+.centralized {
+  text-align: center;
+}
+.title {
+  position: static;
+  height: 8em;
+}
+
+.header-subtitle {
+  color: white;
+  text-shadow: 2px 2px black;
+}
+.header-title {
+  font-size: 85px;
+  text-shadow: 2px 2px white;
+}
+
+/* START HONEYCOMB */
+.main-hex {
+  -webkit-transform: perspective(1200px) rotateX(70deg);
+  -moz-transform: perspective(1200px) rotateX(70deg);
+  -ms-transform: perspective(1200px) rotateX(70deg);
+  -o-transform: perspective(1200px) rotateX(70deg);
+  transform: perspective(1200px) rotateX(70deg);
+  position: fixed;
+  left: auto;
+  top: -102px;
+  z-index: -1;
+}
+.extra-height {
+  height: 18em;
+}
+.hex {
+  float: left;
+  margin-left: 3px;
+  margin-bottom: -26px;
+  text-align: center;
+  font-weight: bold;
+}
+.hex a:hover {
+  color: gray;
+}
+.hex a {
+  color: black;
+}
+.hex .top {
+  width: 0;
+  border-bottom: 30px solid #EC4;
+  border-left: 52px solid transparent;
+  border-right: 52px solid transparent;
+}
+.hex .middle {
+  width: 104px;
+  height: 60px;
+  background: #EC4;
+}
+.hex .bottom {
+  width: 0;
+  border-top: 30px solid #EC4;
+  border-left: 52px solid transparent;
+  border-right: 52px solid transparent;
+}
+.hex-row {
+  clear: left;
+}
+.hex-row.even {
+  margin-left: 53px;
+}
+/* END HONEYCOMB */
+

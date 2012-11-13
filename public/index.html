@@ -13,9 +13,16 @@
           <link rel="stylesheet" href="stylesheets/bootstrap.min.css"/>
           <link rel="stylesheet" href="stylesheets/bootstrap-responsive.min.css"/>
           <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
-
+          <link href='http://fonts.googleapis.com/css?family=Ribeye+Marrow' rel='stylesheet' type='text/css'>
         </head>
-        <body ng-app="beezorroApp">
+        <body class="honey" ng-app="beezorroApp">
+
+          <div class="realhoney hero-unit row-fluid title">
+            <div class="span12">
+              <h1 class="header-title">Beezorros!</h1>
+              <h3 class="header-subtitle">Find out where people look for information when learning and share where you do so!</h3>
+            </div>
+          </div>
 
           <!--[if lt IE 7]>
           <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
@@ -43,5 +50,8 @@
               g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
               s.parentNode.insertBefore(g,s)}(document,'script'));
           </script>
+          <footer>
+          <p><span ng-repeat="bee in bees">{{bee.name}}; </span></p>
+          </footer>
         </body>
       </html>

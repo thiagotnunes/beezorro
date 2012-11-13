@@ -20,11 +20,6 @@ gem 'pry', group: [:development, :test]
 group :test do
   gem 'rspec'
   gem 'rack-test'
-end
-source "http://rubygems.org"
-
-
-group :test do 
   gem 'ruby-debug19'
   gem 'rspec'
   gem 'rack-test'
