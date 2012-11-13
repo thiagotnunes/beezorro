@@ -1,3 +1,6 @@
+.centralized {
+  text-align: center;
+}
 .title {
   position: static;
   height: 8em;
@@ -24,16 +27,18 @@ h1#header-title {
 .extra-height {
   height: 18em;
 }
-.centralize {
-  position: relative;
-  left: 30%;
-}
 .hex {
   float: left;
   margin-left: 3px;
   margin-bottom: -26px;
   text-align: center;
   font-weight: bold;
+}
+.hex a:hover {
+  color: gray;
+}
+.hex a {
+  color: black;
 }
 .hex .top {
   width: 0;
