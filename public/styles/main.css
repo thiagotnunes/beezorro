@@ -1,3 +1,14 @@
+.realhoney {
+  background-image:url('http://www.droid-life.com/wp-content/uploads/2010/12/honeycomb.jpg');
+  width: 100%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  position: relative;
+}
+.honey {
+  background-color: #ED7;
+}
 .centralized {
   text-align: center;
 }
@@ -6,10 +17,13 @@
   height: 8em;
 }
 
-h1#header-title {
+.header-subtitle {
+  color: white;
+  text-shadow: 2px 2px black;
+}
+.header-title {
   font-size: 85px;
-  line-height: 55px;
-  margin-left: 70px;
+  text-shadow: 2px 2px white;
 }
 
 /* START HONEYCOMB */
